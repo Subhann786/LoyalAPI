@@ -26,3 +26,8 @@ Route::controller(ProductController::class)->group(function(){
     Route::delete('delete/{id}' ,'delete'); 
 });
 
+Route::get('/eg', function () {
+    return response()->json(['message' => 'Hy']);
+});
+
+
